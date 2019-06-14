@@ -1,0 +1,91 @@
+$lightgray: rgb(234, 234, 234);
+$gray: rgb(170, 170, 170);
+$darkgray: rgb(100, 100, 100);
+$green: rgb(170, 238, 122);
+
+* {
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: $darkgray;
+}
+body {
+  margin: 0;
+  background-color: $lightgray;
+}
+.classroom {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 30px 5px;
+  .lesson {
+    width: 240px;
+    height: auto;
+    margin: 10px auto;
+    padding-bottom: 10px;
+    text-align: center;
+    background-color: $gray;
+    border-radius: 0.5vw;
+
+    h3 {
+      padding: 1vw;
+    }
+
+    button {
+      width: 200px;
+      height: 30px;
+      margin: 5px;
+      border-radius: 5px;
+      outline: none;
+      box-shadow: 4px 4px 4px $darkgray;
+      cursor: pointer;
+    }
+    button:active {
+      box-shadow: 2px 2px 2px $darkgray;
+    }
+    button:hover {
+      background-color: $lightgray;
+    }
+
+    .game {
+      background-color: $green;
+      .noMagic {
+        all: initial;
+        font-size: 16px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: $darkgray;
+        cursor: pointer;
+      }
+      .magic {
+        display: none;
+      }
+    }
+    .game:hover {
+      background-color: $green;
+      transition-duration: 1s;
+      font-size: 16px;
+      box-shadow: 4px 4px 4px $darkgray;
+      .noMagic {
+        all: initial;
+        font-size: 16px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: $darkgray;
+        cursor: pointer;
+      }
+      .magic {
+        display: block;
+        transition-duration: 1s;
+        all: initial;
+        font-size: 16px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: rgb(255, 140, 0);
+        font-weight: bold;
+        cursor: pointer;
+      }
+    }
+    .game:active {
+      box-shadow: 2px 2px 2px $darkgray;
+      border: none;
+    }
+  }
+}

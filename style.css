@@ -1,0 +1,109 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 16px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #646464;
+}
+
+body {
+  margin: 0;
+  background-color: #eaeaea;
+}
+
+.classroom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding: 30px 5px;
+}
+
+.classroom .lesson {
+  width: 240px;
+  height: auto;
+  margin: 10px auto;
+  padding-bottom: 10px;
+  text-align: center;
+  background-color: #aaaaaa;
+  border-radius: 0.5vw;
+}
+
+.classroom .lesson h3 {
+  padding: 1vw;
+}
+
+.classroom .lesson button {
+  width: 200px;
+  height: 30px;
+  margin: 5px;
+  border-radius: 5px;
+  outline: none;
+  -webkit-box-shadow: 4px 4px 4px #646464;
+          box-shadow: 4px 4px 4px #646464;
+  cursor: pointer;
+}
+
+.classroom .lesson button:active {
+  -webkit-box-shadow: 2px 2px 2px #646464;
+          box-shadow: 2px 2px 2px #646464;
+}
+
+.classroom .lesson button:hover {
+  background-color: #eaeaea;
+}
+
+.classroom .lesson .game {
+  background-color: #aaee7a;
+}
+
+.classroom .lesson .game .noMagic {
+  all: initial;
+  font-size: 16px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #646464;
+  cursor: pointer;
+}
+
+.classroom .lesson .game .magic {
+  display: none;
+}
+
+.classroom .lesson .game:hover {
+  background-color: #aaee7a;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+  font-size: 16px;
+  -webkit-box-shadow: 4px 4px 4px #646464;
+          box-shadow: 4px 4px 4px #646464;
+}
+
+.classroom .lesson .game:hover .noMagic {
+  all: initial;
+  font-size: 16px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #646464;
+  cursor: pointer;
+}
+
+.classroom .lesson .game:hover .magic {
+  display: block;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+  all: initial;
+  font-size: 16px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: darkorange;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.classroom .lesson .game:active {
+  -webkit-box-shadow: 2px 2px 2px #646464;
+          box-shadow: 2px 2px 2px #646464;
+  border: none;
+}
