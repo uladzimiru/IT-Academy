@@ -1,28 +1,29 @@
+
 function Cat(name) {
     this.name = name;
     var foodAmmount = 50;
 
-    this.daylyNorm = function (ammount) {
+    this.daylyNorm = function(ammount) {
         if (!arguments.length) {
-            return foodAmmount;
+            return (foodAmmount + 'гр.');
         } else if (ammount < 50) {
             alert('Маловато');
         } else if (ammount > 500) {
-            alert('Многовато');
-        }
-        foodAmmount = amount;
+            alert('Многовато')
+        };
+        foodAmmount = ammount;
 
     };
 
     function formatFoodAmmount() {
-        return foodAmmount + 'gr.';
+        return foodAmmount + 'гр.';
     }
 
     this.feed = function () {
-        console.log('Насыпаем в миску' + formatFoodAmmount + 'корма.')
+        console.log('Насыпаем в миску' + formatFoodAmmount() + 'корма.')
     };
-}
 
+}
 
 var barsik = new Cat('Barsik');
 
