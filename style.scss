@@ -104,6 +104,7 @@ header {
       font-weight: normal;
       margin: 10px 0;
       outline: none;
+      color: $darkgray;
     }
     .selectedCity {
       border: none;
@@ -201,6 +202,7 @@ header {
       }
       p {
         margin: 7px 0;
+        color: $darkgray;
       }
       .userTags {
         margin-bottom: 6px;

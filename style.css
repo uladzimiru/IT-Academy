@@ -99,6 +99,7 @@ header .headerStuff .searchIcon {
   font-weight: normal;
   margin: 10px 0;
   outline: none;
+  color: #323232;
 }
 
 .content .contentTitle .selectedCity {
@@ -216,6 +217,7 @@ header .headerStuff .searchIcon {
 
 .content .postBlock .postData p {
   margin: 7px 0;
+  color: #323232;
 }
 
 .content .postBlock .postData .userTags {
