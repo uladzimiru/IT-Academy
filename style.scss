@@ -26,7 +26,7 @@ header {
     height: 40px;
     padding: 5px 0;
     float: left;
-    cursor: pointer;
+    // cursor: pointer;
 
     .dropDownIcon {
       .mobileMenuBar {
@@ -38,6 +38,7 @@ header {
     }
 
     .dropDownList {
+      // display: block;
       display: none;
       width: 120px;
       height: 220px;
@@ -52,6 +53,7 @@ header {
         text-decoration: none;
         color: $lightgray;
         padding: 10px;
+        cursor: pointer;
       }
       a:hover {
         background-color: $gray;
@@ -95,6 +97,7 @@ header {
       font-size: 38px;
       font-weight: normal;
       margin: 10px 0;
+      outline: none;
     }
     .selectedCity {
       border: none;
@@ -112,11 +115,25 @@ header {
     background-color: $lightgray;
     width: 100%;
     height: 60px;
-    // background-image: url(src/images/magnifier-glass_black.png);
-    // background-repeat: no-repeat;
-    // background-position: 20px 15px;
-    // background-size: 25px;
-    padding: 17px 60px;
-    
+    form {
+      height: 60px;
+      width: 70%;
+      float: left;
+      img {
+        float: left;
+        max-width: 25px;
+        margin: 17px 25px;
+        opacity: 0.4;
+      }
+      input {
+        margin: 20px 10px;
+      }
+    }
+    img {
+      display: inline-block;
+      max-width: 25px;
+      margin: 17px 25px;
+      opacity: 0.4;
+    }
   }
 }
