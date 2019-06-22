@@ -1,11 +1,13 @@
-$lightgray: rgb(242, 242, 242);
+$lightgray: rgb(233, 233, 233);
 $gray: rgb(133, 133, 133);
 $darkgray: rgb(50, 50, 50);
+$blue: rgb(123, 168, 216);
 
 * {
   box-sizing: border-box;
   font-size: 16px;
   font-family: Arial, Helvetica, sans-serif;
+  color: $gray;
 }
 
 body {
@@ -13,6 +15,8 @@ body {
   padding: 0;
   border: 0;
 }
+
+// HEADER
 
 header {
   width: 100%;
@@ -31,9 +35,9 @@ header {
     .dropDownIcon {
       .mobileMenuBar {
         width: 25px;
-        height: 5px;
+        height: 3px;
         background-color: white;
-        margin: 5px 0;
+        margin: 6px 0;
       }
     }
 
@@ -86,6 +90,8 @@ header {
   }
 }
 
+// PAGE TITLE
+
 .content {
   .contentTitle {
     width: 100%;
@@ -94,7 +100,7 @@ header {
     h1,
     .selectedCity {
       font-family: "Times New Roman", Times, serif;
-      font-size: 38px;
+      font-size: 36px;
       font-weight: normal;
       margin: 10px 0;
       outline: none;
@@ -111,13 +117,16 @@ header {
       background-size: 15px;
     }
   }
+
+  // FORM TOOLS
+
   .formTools {
     background-color: $lightgray;
     width: 100%;
     height: 60px;
     form {
       height: 60px;
-      width: 70%;
+      max-width: 70%;
       float: left;
       img {
         float: left;
@@ -129,11 +138,81 @@ header {
         margin: 20px 10px;
       }
     }
-    img {
-      display: inline-block;
-      max-width: 25px;
-      margin: 17px 25px;
-      opacity: 0.4;
+    .plusAndSliders {
+      float: right;
+      margin-right: 20px;
+      img {
+        display: inline-block;
+        max-width: 25px;
+        margin: 17px 20px;
+        opacity: 0.4;
+      }
+    }
+  }
+
+  // USER POSTS BLOCKS
+
+  .postBlock {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin: 20px 20px;
+    .avatar {
+      width: 90px;
+      img {
+        max-width: 60px;
+      }
+    }
+    .postData {
+      width: 80%;
+      .userData {
+        margin-bottom: 6px;
+        p {
+          font-size: 14px;
+          margin: 0;
+          opacity: 0.7;
+          span {
+            font-size: 14px;
+            margin: 0 10px;
+            padding: 5px 12px;
+            background-color: $lightgray;
+            border-radius: 5px;
+            opacity: 0.7;
+          }
+        }
+      }
+      .userStat {
+        margin-bottom: 6px;
+        opacity: 0.7;
+        img {
+          max-width: 15px;
+          opacity: 0.7;
+        }
+        span {
+          font-size: 14px;
+          margin-right: 10px;
+          opacity: 0.7;
+        }
+      }
+      h5 {
+        margin: 0;
+        color: $blue;
+        font-size: 20px;
+      }
+      p {
+        margin: 7px 0;
+      }
+      .userTags {
+        margin-bottom: 6px;
+        img {
+          max-width: 15px;
+          opacity: 0.5;
+        }
+        span {
+          font-size: 14px;
+          opacity: 0.7;
+        }
+      }
     }
   }
 }

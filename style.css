@@ -3,6 +3,7 @@
           box-sizing: border-box;
   font-size: 16px;
   font-family: Arial, Helvetica, sans-serif;
+  color: #858585;
 }
 
 body {
@@ -15,7 +16,7 @@ header {
   width: 100%;
   height: 80px;
   background-color: #323232;
-  color: #f2f2f2;
+  color: #e9e9e9;
   padding: 20px 15px;
 }
 
@@ -28,9 +29,9 @@ header .mobileMenu {
 
 header .mobileMenu .dropDownIcon .mobileMenuBar {
   width: 25px;
-  height: 5px;
+  height: 3px;
   background-color: white;
-  margin: 5px 0;
+  margin: 6px 0;
 }
 
 header .mobileMenu .dropDownList {
@@ -48,7 +49,7 @@ header .mobileMenu .dropDownList a {
   width: 110px;
   background-color: #323232;
   text-decoration: none;
-  color: #f2f2f2;
+  color: #e9e9e9;
   padding: 10px;
   cursor: pointer;
 }
@@ -94,7 +95,7 @@ header .headerStuff .searchIcon {
 .content .contentTitle h1,
 .content .contentTitle .selectedCity {
   font-family: "Times New Roman", Times, serif;
-  font-size: 38px;
+  font-size: 36px;
   font-weight: normal;
   margin: 10px 0;
   outline: none;
@@ -113,14 +114,14 @@ header .headerStuff .searchIcon {
 }
 
 .content .formTools {
-  background-color: #f2f2f2;
+  background-color: #e9e9e9;
   width: 100%;
   height: 60px;
 }
 
 .content .formTools form {
   height: 60px;
-  width: 70%;
+  max-width: 70%;
   float: left;
 }
 
@@ -135,9 +136,98 @@ header .headerStuff .searchIcon {
   margin: 20px 10px;
 }
 
-.content .formTools img {
+.content .formTools .plusAndSliders {
+  float: right;
+  margin-right: 20px;
+}
+
+.content .formTools .plusAndSliders img {
   display: inline-block;
   max-width: 25px;
-  margin: 17px 25px;
+  margin: 17px 20px;
   opacity: 0.4;
+}
+
+.content .postBlock {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  margin: 20px 20px;
+}
+
+.content .postBlock .avatar {
+  width: 90px;
+}
+
+.content .postBlock .avatar img {
+  max-width: 60px;
+}
+
+.content .postBlock .postData {
+  width: 80%;
+}
+
+.content .postBlock .postData .userData {
+  margin-bottom: 6px;
+}
+
+.content .postBlock .postData .userData p {
+  font-size: 14px;
+  margin: 0;
+  opacity: 0.7;
+}
+
+.content .postBlock .postData .userData p span {
+  font-size: 14px;
+  margin: 0 10px;
+  padding: 5px 12px;
+  background-color: #e9e9e9;
+  border-radius: 5px;
+  opacity: 0.7;
+}
+
+.content .postBlock .postData .userStat {
+  margin-bottom: 6px;
+  opacity: 0.7;
+}
+
+.content .postBlock .postData .userStat img {
+  max-width: 15px;
+  opacity: 0.7;
+}
+
+.content .postBlock .postData .userStat span {
+  font-size: 14px;
+  margin-right: 10px;
+  opacity: 0.7;
+}
+
+.content .postBlock .postData h5 {
+  margin: 0;
+  color: #7ba8d8;
+  font-size: 20px;
+}
+
+.content .postBlock .postData p {
+  margin: 7px 0;
+}
+
+.content .postBlock .postData .userTags {
+  margin-bottom: 6px;
+}
+
+.content .postBlock .postData .userTags img {
+  max-width: 15px;
+  opacity: 0.5;
+}
+
+.content .postBlock .postData .userTags span {
+  font-size: 14px;
+  opacity: 0.7;
 }
