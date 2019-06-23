@@ -123,11 +123,6 @@ header .headerStuff .searchIcon {
   border-bottom: 2px dashed black;
   border-radius: 0;
   padding-right: 5px;
-  background-color: white;
-  background-image: url(src/images/arrowDown.png);
-  background-repeat: no-repeat;
-  background-position: right;
-  background-size: 15px;
 }
 
 .content .formTools {
@@ -406,10 +401,6 @@ footer .footerMenu a {
     border-radius: 0;
     padding-right: 5px;
     background-color: white;
-    background-image: url(src/images/arrowDown.png);
-    background-repeat: no-repeat;
-    background-position: right;
-    background-size: 15px;
   }
   .main .content .formTools {
     background-color: #f2f2f2;
