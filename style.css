@@ -123,6 +123,7 @@ header .headerStuff .searchIcon {
   border-bottom: 2px dashed black;
   border-radius: 0;
   padding-right: 5px;
+  background-color: white;
 }
 
 .content .formTools {
@@ -145,19 +146,19 @@ header .headerStuff .searchIcon {
 }
 
 .content .formTools form input {
-  margin: 20px 10px;
-  padding: 0 15px;
+  margin: 20px 5px;
+  padding: 0 10px;
 }
 
 .content .formTools .plusAndSliders {
   float: right;
-  margin-right: 20px;
+  margin-right: 10px;
 }
 
 .content .formTools .plusAndSliders img {
   display: inline-block;
   max-width: 25px;
-  margin: 17px 20px;
+  margin: 17px 10px;
   opacity: 0.4;
 }
 
@@ -248,7 +249,7 @@ header .headerStuff .searchIcon {
   text-align: center;
   height: 80px;
   padding: 40px 40px 70px 40px;
-  margin-bottom: 50px;
+  margin-bottom: 10px;
 }
 
 .content .previuosNextButton a {
@@ -269,21 +270,34 @@ header .headerStuff .searchIcon {
   max-width: 6px;
 }
 
-footer {
-  padding: 33px 0;
-  height: 80px;
+footer .footerMenu {
+  width: 100%;
+  padding: 17px 20px;
+  height: 50px;
   background-color: #f2f2f2;
   text-align: center;
-}
-
-footer .footerMenu {
-  display: inline-block;
+  display: block;
+  border-bottom: 1px solid white;
 }
 
 footer .footerMenu a {
   text-decoration: none;
   margin: 5px;
   font-size: 14px;
+}
+
+footer .copyRight {
+  display: none;
+  width: 100%;
+  padding: 17px 60px;
+  height: 50px;
+  background-color: #f2f2f2;
+  text-align: left;
+  font-size: 14px;
+  background-image: url(src/images/logoWhite_QulixSystems_gray.png);
+  background-repeat: no-repeat;
+  background-size: 25px;
+  background-position: 22px 17px;
 }
 
 @media (min-width: 650px) {
@@ -351,10 +365,22 @@ footer .footerMenu a {
     font-size: 14px;
     margin: 0 12px;
   }
+  .main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
   .main .leftMenu {
-    width: 20%;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 150px;
+            flex: 0 0 150px;
     display: block;
-    float: left;
     margin-left: 30px;
   }
   .main .leftMenu a {
@@ -371,13 +397,11 @@ footer .footerMenu a {
     text-align: left;
     color: black;
     font-weight: normal;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: "Times New Roman", Times, serif;
     margin: 50px 0 25px 0;
     font-size: 20px;
   }
   .main .content {
-    width: 75%;
-    display: inline-block;
     border-left: 1.5px solid #f2f2f2;
   }
   .main .content .contentTitle {
@@ -385,6 +409,36 @@ footer .footerMenu a {
     height: 80px;
     text-align: center;
     background-color: white;
+  }
+  .main .content .contentTitle .formTools {
+    background-color: #f2f2f2;
+    width: 100%;
+    height: 60px;
+  }
+  .main .content .contentTitle .formTools form {
+    height: 60px;
+    max-width: 70%;
+    float: left;
+  }
+  .main .content .contentTitle .formTools form img {
+    float: left;
+    max-width: 25px;
+    margin: 17px 25px;
+    opacity: 0.4;
+  }
+  .main .content .contentTitle .formTools form input {
+    margin: 20px 5px;
+    padding: 10px 10px;
+  }
+  .main .content .contentTitle .formTools .plusAndSliders {
+    float: right;
+    margin-right: 10px;
+  }
+  .main .content .contentTitle .formTools .plusAndSliders img {
+    display: inline-block;
+    max-width: 25px;
+    margin: 17px 10px;
+    opacity: 0.4;
   }
   .main .content .contentTitle h1,
   .main .content .contentTitle .selectedCity {
@@ -402,137 +456,20 @@ footer .footerMenu a {
     padding-right: 5px;
     background-color: white;
   }
-  .main .content .formTools {
-    background-color: #f2f2f2;
-    width: 100%;
-    height: 60px;
+  .main .content footer .footerMenu {
+    text-align: left;
   }
-  .main .content .formTools form {
-    height: 60px;
-    max-width: 70%;
-    float: left;
-  }
-  .main .content .formTools form img {
-    float: left;
-    max-width: 25px;
-    margin: 17px 25px;
-    opacity: 0.4;
-  }
-  .main .content .formTools form input {
-    margin: 20px 10px;
-    padding: 0 15px;
-  }
-  .main .content .formTools .plusAndSliders {
-    float: right;
-    margin-right: 20px;
-  }
-  .main .content .formTools .plusAndSliders img {
-    display: inline-block;
-    max-width: 25px;
-    margin: 17px 20px;
-    opacity: 0.4;
-  }
-  .main .content .postBlock {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
-    margin: 20px 20px;
-  }
-  .main .content .postBlock .avatar {
-    width: 90px;
-  }
-  .main .content .postBlock .avatar img {
-    max-width: 60px;
-  }
-  .main .content .postBlock .postData {
-    width: 80%;
-  }
-  .main .content .postBlock .postData .userData {
-    margin-bottom: 6px;
-  }
-  .main .content .postBlock .postData .userData p {
-    font-size: 14px;
-    margin: 0;
-    color: #878787;
-  }
-  .main .content .postBlock .postData .userData p span {
-    font-size: 14px;
-    margin: 0 10px;
-    padding: 5px 12px;
-    background-color: #f2f2f2;
-    border-radius: 5px;
-    color: #878787;
-  }
-  .main .content .postBlock .postData .userStat {
-    margin-bottom: 6px;
-    opacity: 0.7;
-  }
-  .main .content .postBlock .postData .userStat img {
-    max-width: 15px;
-    opacity: 0.7;
-  }
-  .main .content .postBlock .postData .userStat span {
-    font-size: 14px;
-    margin-right: 10px;
-  }
-  .main .content .postBlock .postData h5 {
-    margin: 0;
-    color: #7ba8d8;
-    font-size: 20px;
-  }
-  .main .content .postBlock .postData p {
-    margin: 7px 0;
-    color: #323232;
-  }
-  .main .content .postBlock .postData .userTags {
-    margin-bottom: 6px;
-  }
-  .main .content .postBlock .postData .userTags img {
-    max-width: 15px;
-    opacity: 0.5;
-  }
-  .main .content .postBlock .postData .userTags span {
-    font-size: 14px;
-  }
-  .main .content .previuosNextButton {
-    text-align: center;
-    height: 80px;
-    padding: 40px 40px 70px 40px;
-  }
-  .main .content .previuosNextButton a {
-    margin: 12px;
-    padding: 18px 30px;
-    border: 1px solid #878787;
-    border-radius: 5px;
-    color: #323232;
-    text-decoration: none;
-  }
-  .main .content .previuosNextButton a span {
-    margin: 0 10px;
-    color: #323232;
-  }
-  .main .content .previuosNextButton a img {
-    max-width: 6px;
-  }
-  footer {
-    width: 100%;
-    padding: 33px 0;
-    height: 80px;
-    background-color: #f2f2f2;
-    text-align: center;
-  }
-  footer .footerMenu {
+  .main .content footer .copyRight {
     display: block;
-  }
-  footer .footerMenu a {
-    text-decoration: none;
-    margin: 5px;
+    width: 100%;
+    padding: 17px 60px;
+    height: 50px;
+    background-color: #f2f2f2;
+    text-align: left;
     font-size: 14px;
+    background-image: url(src/images/logoWhite_QulixSystems_gray.png);
+    background-repeat: no-repeat;
+    background-size: 25px;
+    background-position: 22px 17px;
   }
 }
