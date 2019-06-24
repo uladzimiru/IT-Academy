@@ -1,0 +1,475 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #878787;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+header {
+  width: 100%;
+  height: 80px;
+  background-color: #323232;
+  color: #f2f2f2;
+  padding: 20px 15px;
+}
+
+header .desktopStuff {
+  display: none;
+}
+
+header .mobileMenu {
+  width: 50px;
+  height: 40px;
+  padding: 5px 0;
+  float: left;
+}
+
+header .mobileMenu .dropDownIcon .mobileMenuBar {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 6px 0;
+}
+
+header .mobileMenu .dropDownList {
+  display: none;
+  width: 120px;
+  height: 220px;
+  height: auto;
+  position: absolute;
+  left: 0;
+  top: 80px;
+}
+
+header .mobileMenu .dropDownList a {
+  display: inline-block;
+  width: 110px;
+  background-color: #323232;
+  text-decoration: none;
+  color: #f2f2f2;
+  padding: 10px;
+  cursor: pointer;
+}
+
+header .mobileMenu .dropDownList a:hover {
+  background-color: #878787;
+}
+
+header .headerStuff {
+  width: 75%;
+  height: 50px;
+  float: right;
+  background-image: url(src/images/logoWhite_QulixSystems.png);
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: 60px;
+}
+
+header .headerStuff .selectedCity {
+  display: none;
+}
+
+header .headerStuff span {
+  float: left;
+  margin: 12px 5% 12px 23%;
+  font-size: 22px;
+  color: white;
+}
+
+header .headerStuff .userImage {
+  max-width: 45px;
+  margin: 0 3%;
+  border-radius: 5px;
+}
+
+header .headerStuff .searchIcon {
+  max-width: 25px;
+  margin: 10px 3%;
+}
+
+.desktopMenu {
+  display: none;
+}
+
+.leftMenu {
+  display: none;
+}
+
+.content .contentTitle {
+  width: 100%;
+  height: 80px;
+  text-align: center;
+}
+
+.content .contentTitle h1,
+.content .contentTitle .selectedCity {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 36px;
+  font-weight: normal;
+  margin: 10px 0;
+  outline: none;
+  color: #323232;
+}
+
+.content .contentTitle .selectedCity {
+  border: none;
+  border-bottom: 2px dashed black;
+  border-radius: 0;
+  padding-right: 5px;
+  background-color: white;
+}
+
+.content .formTools {
+  background-color: #f2f2f2;
+  width: 100%;
+  height: 60px;
+}
+
+.content .formTools form {
+  height: 60px;
+  max-width: 70%;
+  float: left;
+}
+
+.content .formTools form img {
+  float: left;
+  max-width: 25px;
+  margin: 17px 25px;
+  opacity: 0.4;
+}
+
+.content .formTools form input {
+  margin: 20px 5px;
+  padding: 0 10px;
+}
+
+.content .formTools .plusAndSliders {
+  float: right;
+  margin-right: 10px;
+}
+
+.content .formTools .plusAndSliders img {
+  display: inline-block;
+  max-width: 25px;
+  margin: 17px 10px;
+  opacity: 0.4;
+}
+
+.content .postBlock {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  margin: 20px 20px;
+}
+
+.content .postBlock .avatar {
+  width: 90px;
+}
+
+.content .postBlock .avatar img {
+  max-width: 60px;
+}
+
+.content .postBlock .postData {
+  width: 80%;
+}
+
+.content .postBlock .postData .userData {
+  margin-bottom: 6px;
+}
+
+.content .postBlock .postData .userData p {
+  font-size: 14px;
+  margin: 0;
+  color: #878787;
+}
+
+.content .postBlock .postData .userData p span {
+  font-size: 14px;
+  margin: 0 10px;
+  padding: 5px 12px;
+  background-color: #f2f2f2;
+  border-radius: 5px;
+  color: #878787;
+}
+
+.content .postBlock .postData .userStat {
+  margin-bottom: 6px;
+  opacity: 0.7;
+}
+
+.content .postBlock .postData .userStat img {
+  max-width: 15px;
+  opacity: 0.7;
+}
+
+.content .postBlock .postData .userStat span {
+  font-size: 14px;
+  margin-right: 10px;
+}
+
+.content .postBlock .postData h5 {
+  margin: 0;
+  color: #7ba8d8;
+  font-size: 20px;
+}
+
+.content .postBlock .postData p {
+  margin: 7px 0;
+  color: #323232;
+}
+
+.content .postBlock .postData .userTags {
+  margin-bottom: 6px;
+}
+
+.content .postBlock .postData .userTags img {
+  max-width: 15px;
+  opacity: 0.5;
+}
+
+.content .postBlock .postData .userTags span {
+  font-size: 14px;
+}
+
+.content .previuosNextButton {
+  text-align: center;
+  height: 80px;
+  padding: 40px 40px 70px 40px;
+  margin-bottom: 10px;
+}
+
+.content .previuosNextButton a {
+  margin: 12px;
+  padding: 18px 30px;
+  border: 1px solid #878787;
+  border-radius: 5px;
+  color: #323232;
+  text-decoration: none;
+}
+
+.content .previuosNextButton a span {
+  margin: 0 10px;
+  color: #323232;
+}
+
+.content .previuosNextButton a img {
+  max-width: 6px;
+}
+
+footer .footerMenu {
+  width: 100%;
+  padding: 17px 20px;
+  height: 50px;
+  background-color: #f2f2f2;
+  text-align: center;
+  display: block;
+  border-bottom: 1px solid white;
+}
+
+footer .footerMenu a {
+  text-decoration: none;
+  margin: 5px;
+  font-size: 14px;
+}
+
+footer .copyRight {
+  display: none;
+  width: 100%;
+  padding: 17px 60px;
+  height: 50px;
+  background-color: #f2f2f2;
+  text-align: left;
+  font-size: 14px;
+  background-image: url(src/images/logoWhite_QulixSystems_gray.png);
+  background-repeat: no-repeat;
+  background-size: 25px;
+  background-position: 22px 17px;
+}
+
+@media (min-width: 650px) {
+  header {
+    width: 100%;
+    height: 60px;
+    background-color: #323232;
+    color: #f2f2f2;
+    padding: 0 15px;
+    background-image: url(src/images/logoQulixSystems.png);
+    background-repeat: no-repeat;
+    background-position: 10px;
+    background-size: 40px;
+  }
+  header .desktopStuff {
+    display: block;
+    width: 500px;
+    height: 60px;
+    float: right;
+    background-image: url(src/images/bear.png);
+    background-repeat: no-repeat;
+    background-position: 85%;
+    background-size: 40px;
+    padding-top: 20px;
+    text-align: end;
+  }
+  header .desktopStuff form {
+    display: inline-block;
+  }
+  header .desktopStuff .selectedCity {
+    display: inline-block;
+    border: none;
+    background-color: #323232;
+    border-bottom: 1px dashed #878787;
+    border-radius: 0;
+    font-size: 14px;
+    outline: none;
+    vertical-align: super;
+  }
+  header .desktopStuff span {
+    font-size: 14px;
+    vertical-align: super;
+    margin-right: 80px;
+  }
+  header .desktopStuff img {
+    max-width: 20px;
+    margin: 0 3%;
+  }
+  header .mobileMenu {
+    display: none;
+  }
+  header .headerStuff {
+    display: none;
+  }
+  .desktopMenu {
+    display: block;
+    width: 100%;
+    height: 40px;
+    background-color: #878787;
+    padding: 10px 0;
+  }
+  .desktopMenu a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    margin: 0 12px;
+  }
+  .main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+  .main .leftMenu {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 150px;
+            flex: 0 0 150px;
+    display: block;
+    margin-left: 30px;
+  }
+  .main .leftMenu a {
+    display: block;
+    text-decoration: none;
+    text-align: left;
+    margin-top: 25px;
+    font-size: 14px;
+  }
+  .main .leftMenu a span {
+    font-size: 14px;
+  }
+  .main .leftMenu h4 {
+    text-align: left;
+    color: black;
+    font-weight: normal;
+    font-family: "Times New Roman", Times, serif;
+    margin: 50px 0 25px 0;
+    font-size: 20px;
+  }
+  .main .content {
+    border-left: 1.5px solid #f2f2f2;
+  }
+  .main .content .contentTitle {
+    width: 100%;
+    height: 80px;
+    text-align: center;
+    background-color: white;
+  }
+  .main .content .contentTitle .formTools {
+    background-color: #f2f2f2;
+    width: 100%;
+    height: 60px;
+  }
+  .main .content .contentTitle .formTools form {
+    height: 60px;
+    max-width: 70%;
+    float: left;
+  }
+  .main .content .contentTitle .formTools form img {
+    float: left;
+    max-width: 25px;
+    margin: 17px 25px;
+    opacity: 0.4;
+  }
+  .main .content .contentTitle .formTools form input {
+    margin: 20px 5px;
+    padding: 10px 10px;
+  }
+  .main .content .contentTitle .formTools .plusAndSliders {
+    float: right;
+    margin-right: 10px;
+  }
+  .main .content .contentTitle .formTools .plusAndSliders img {
+    display: inline-block;
+    max-width: 25px;
+    margin: 17px 10px;
+    opacity: 0.4;
+  }
+  .main .content .contentTitle h1,
+  .main .content .contentTitle .selectedCity {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 36px;
+    font-weight: normal;
+    margin: 10px 0;
+    outline: none;
+    color: #323232;
+  }
+  .main .content .contentTitle .selectedCity {
+    border: none;
+    border-bottom: 2px dashed black;
+    border-radius: 0;
+    padding-right: 5px;
+    background-color: white;
+  }
+  .main .content footer .footerMenu {
+    text-align: left;
+  }
+  .main .content footer .copyRight {
+    display: block;
+    width: 100%;
+    padding: 17px 60px;
+    height: 50px;
+    background-color: #f2f2f2;
+    text-align: left;
+    font-size: 14px;
+    background-image: url(src/images/logoWhite_QulixSystems_gray.png);
+    background-repeat: no-repeat;
+    background-size: 25px;
+    background-position: 22px 17px;
+  }
+}
