@@ -473,3 +473,10 @@ footer .copyRight {
     background-position: 22px 17px;
   }
 }
+
+@media (min-width: 992px) {
+  body {
+    margin-left: calc((100% - 992px)/2);
+    margin-right: calc((100% - 992px)/2);
+  }
+}
