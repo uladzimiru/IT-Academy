@@ -3,20 +3,21 @@
           box-sizing: border-box;
   font-size: 16px;
   font-family: Arial, Helvetica, sans-serif;
-  color: #878787;
+  color: #646d81;
 }
 
 body {
   margin: 0;
   padding: 0;
   border: 0;
+  min-width: 430px;
 }
 
 header {
   width: 100%;
   height: 80px;
-  background-color: #323232;
-  color: #f2f2f2;
+  background-color: #2d313d;
+  color: #f2f4f8;
   padding: 20px 15px;
 }
 
@@ -51,15 +52,15 @@ header .mobileMenu .dropDownList {
 header .mobileMenu .dropDownList a {
   display: inline-block;
   width: 110px;
-  background-color: #323232;
+  background-color: #2d313d;
   text-decoration: none;
-  color: #f2f2f2;
+  color: #f2f4f8;
   padding: 10px;
   cursor: pointer;
 }
 
 header .mobileMenu .dropDownList a:hover {
-  background-color: #878787;
+  background-color: #646d81;
 }
 
 header .headerStuff {
@@ -73,6 +74,9 @@ header .headerStuff {
 }
 
 header .headerStuff .selectedCity {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   display: none;
 }
 
@@ -115,7 +119,7 @@ header .headerStuff .searchIcon {
   font-weight: normal;
   margin: 10px 0;
   outline: none;
-  color: #323232;
+  color: #2d313d;
 }
 
 .content .contentTitle .selectedCity {
@@ -124,10 +128,13 @@ header .headerStuff .searchIcon {
   border-radius: 0;
   padding-right: 5px;
   background-color: white;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
 }
 
 .content .formTools {
-  background-color: #f2f2f2;
+  background-color: #f2f4f8;
   width: 100%;
   height: 60px;
 }
@@ -142,7 +149,7 @@ header .headerStuff .searchIcon {
   float: left;
   max-width: 25px;
   margin: 17px 25px;
-  opacity: 0.4;
+  opacity: 0.7;
 }
 
 .content .formTools form input {
@@ -159,7 +166,6 @@ header .headerStuff .searchIcon {
   display: inline-block;
   max-width: 25px;
   margin: 17px 10px;
-  opacity: 0.4;
 }
 
 .content .postBlock {
@@ -194,16 +200,16 @@ header .headerStuff .searchIcon {
 .content .postBlock .postData .userData p {
   font-size: 14px;
   margin: 0;
-  color: #878787;
+  color: #99a1b3;
 }
 
 .content .postBlock .postData .userData p span {
   font-size: 14px;
   margin: 0 10px;
   padding: 5px 12px;
-  background-color: #f2f2f2;
+  background-color: #f2f4f8;
   border-radius: 5px;
-  color: #878787;
+  color: #99a1b3;
 }
 
 .content .postBlock .postData .userStat {
@@ -219,6 +225,7 @@ header .headerStuff .searchIcon {
 .content .postBlock .postData .userStat span {
   font-size: 14px;
   margin-right: 10px;
+  color: #99a1b3;
 }
 
 .content .postBlock .postData h5 {
@@ -229,7 +236,7 @@ header .headerStuff .searchIcon {
 
 .content .postBlock .postData p {
   margin: 7px 0;
-  color: #323232;
+  color: #2d313d;
 }
 
 .content .postBlock .postData .userTags {
@@ -243,6 +250,7 @@ header .headerStuff .searchIcon {
 
 .content .postBlock .postData .userTags span {
   font-size: 14px;
+  color: #99a1b3;
 }
 
 .content .previuosNextButton {
@@ -255,15 +263,15 @@ header .headerStuff .searchIcon {
 .content .previuosNextButton a {
   margin: 12px;
   padding: 18px 30px;
-  border: 1px solid #878787;
+  border: 1px solid #646d81;
   border-radius: 5px;
-  color: #323232;
+  color: #2d313d;
   text-decoration: none;
 }
 
 .content .previuosNextButton a span {
   margin: 0 10px;
-  color: #323232;
+  color: #2d313d;
 }
 
 .content .previuosNextButton a img {
@@ -274,7 +282,7 @@ footer .footerMenu {
   width: 100%;
   padding: 17px 20px;
   height: 50px;
-  background-color: #f2f2f2;
+  background-color: #f2f4f8;
   text-align: center;
   display: block;
   border-bottom: 1px solid white;
@@ -291,7 +299,7 @@ footer .copyRight {
   width: 100%;
   padding: 17px 60px;
   height: 50px;
-  background-color: #f2f2f2;
+  background-color: #f2f4f8;
   text-align: left;
   font-size: 14px;
   background-image: url(src/images/logoWhite_QulixSystems_gray.png);
@@ -304,8 +312,8 @@ footer .copyRight {
   header {
     width: 100%;
     height: 60px;
-    background-color: #323232;
-    color: #f2f2f2;
+    background-color: #2d313d;
+    color: #f2f4f8;
     padding: 0 15px;
     background-image: url(src/images/logoQulixSystems.png);
     background-repeat: no-repeat;
@@ -317,11 +325,7 @@ footer .copyRight {
     width: 500px;
     height: 60px;
     float: right;
-    background-image: url(src/images/bear.png);
-    background-repeat: no-repeat;
-    background-position: 85%;
-    background-size: 40px;
-    padding-top: 20px;
+    padding-top: 15px;
     text-align: end;
   }
   header .desktopStuff form {
@@ -330,21 +334,27 @@ footer .copyRight {
   header .desktopStuff .selectedCity {
     display: inline-block;
     border: none;
-    background-color: #323232;
-    border-bottom: 1px dashed #878787;
+    background-color: #2d313d;
+    border-bottom: 1px dashed #646d81;
     border-radius: 0;
     font-size: 14px;
     outline: none;
-    vertical-align: super;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
   }
   header .desktopStuff span {
     font-size: 14px;
-    vertical-align: super;
-    margin-right: 80px;
+    margin-right: 5px;
   }
   header .desktopStuff img {
+    vertical-align: middle;
     max-width: 20px;
     margin: 0 3%;
+    border-radius: 5px;
+  }
+  header .desktopStuff .userImage {
+    max-width: 30px;
   }
   header .mobileMenu {
     display: none;
@@ -356,14 +366,24 @@ footer .copyRight {
     display: block;
     width: 100%;
     height: 40px;
-    background-color: #878787;
-    padding: 10px 0;
+    background-color: #646d81;
+    padding-left: calc((100% - 1010px) / 2);
   }
-  .desktopMenu a {
+  .desktopMenu .menuItems {
+    width: 600px;
+    text-align: left;
+  }
+  .desktopMenu .menuItems a {
+    display: inline-block;
     color: white;
     text-decoration: none;
     font-size: 14px;
-    margin: 0 12px;
+    padding: 6px 8px 10px 12px;
+    margin-right: 20px;
+    border-top: 6px solid #646d81;
+  }
+  .desktopMenu a:hover {
+    border-top: 6px solid white;
   }
   .main {
     display: -webkit-box;
@@ -378,10 +398,11 @@ footer .copyRight {
   }
   .main .leftMenu {
     -webkit-box-flex: 0;
-        -ms-flex: 0 0 150px;
-            flex: 0 0 150px;
+        -ms-flex: 0 0 170px;
+            flex: 0 0 170px;
     display: block;
-    margin-left: 30px;
+    padding-left: 25px;
+    border: 1.5px solid #f2f4f8;
   }
   .main .leftMenu a {
     display: block;
@@ -389,9 +410,11 @@ footer .copyRight {
     text-align: left;
     margin-top: 25px;
     font-size: 14px;
+    color: #99a1b3;
   }
   .main .leftMenu a span {
     font-size: 14px;
+    color: #99a1b3;
   }
   .main .leftMenu h4 {
     text-align: left;
@@ -402,71 +425,102 @@ footer .copyRight {
     font-size: 20px;
   }
   .main .content {
-    border-left: 1.5px solid #f2f2f2;
+    border-right: 1.5px solid #f2f4f8;
   }
   .main .content .contentTitle {
     width: 100%;
-    height: 80px;
-    text-align: center;
+    height: 85px;
+    text-align: left;
     background-color: white;
+    padding: 20px 30px;
   }
-  .main .content .contentTitle .formTools {
-    background-color: #f2f2f2;
+  .main .content .contentTitle h1 {
+    text-align: left;
+    margin: 0 0;
+    font: 30px Georgia;
+  }
+  .main .content .contentTitle .selectedCity {
+    font-size: 34px;
+    font-weight: normal;
+    outline: none;
+    color: #2d313d;
+    text-align: left;
+    vertical-align: middle;
+    border: none;
+    border-bottom: 2px dashed black;
+    border-radius: 0;
+    padding-left: 10px;
+    background-color: white;
+    font: 30px Georgia;
+  }
+  .main .content .formTools {
+    background-color: #f2f4f8;
     width: 100%;
     height: 60px;
   }
-  .main .content .contentTitle .formTools form {
+  .main .content .formTools form {
     height: 60px;
     max-width: 70%;
     float: left;
   }
-  .main .content .contentTitle .formTools form img {
+  .main .content .formTools form img {
+    display: none;
     float: left;
     max-width: 25px;
     margin: 17px 25px;
     opacity: 0.4;
   }
-  .main .content .contentTitle .formTools form input {
-    margin: 20px 5px;
-    padding: 10px 10px;
-  }
-  .main .content .contentTitle .formTools .plusAndSliders {
-    float: right;
-    margin-right: 10px;
-  }
-  .main .content .contentTitle .formTools .plusAndSliders img {
-    display: inline-block;
-    max-width: 25px;
-    margin: 17px 10px;
-    opacity: 0.4;
-  }
-  .main .content .contentTitle h1,
-  .main .content .contentTitle .selectedCity {
-    font-family: "Times New Roman", Times, serif;
-    font-size: 36px;
-    font-weight: normal;
-    margin: 10px 0;
+  .main .content .formTools form input[type="text"] {
+    border-radius: 5px;
+    border: 1px solid #dedede;
+    margin: 5px 40px;
+    padding: 0 10px;
+    width: 300px;
+    height: 50px;
+    font-size: 14px;
     outline: none;
-    color: #323232;
+    background-image: url(src/images/magnifier-glass_gray.png);
+    background-position: 250px 12px;
+    background-size: 24px;
+    background-repeat: no-repeat;
+    opacity: 0.6;
   }
-  .main .content .contentTitle .selectedCity {
-    border: none;
-    border-bottom: 2px dashed black;
-    border-radius: 0;
-    padding-right: 5px;
-    background-color: white;
+  .main .content .formTools .plusAndSliders {
+    float: right;
+    margin-right: 30px;
+  }
+  .main .content .formTools .plusAndSliders a {
+    display: inline-block;
+    vertical-align: text-top;
+    margin: 22px 30px;
+    text-decoration: none;
+    color: #646d81;
+    opacity: 0.7;
+    font: 14px Georgia;
+  }
+  .main .content .formTools .plusAndSliders a img {
+    display: inline-block;
+    margin: 0 0;
+    max-width: 20px;
+  }
+  .main .content .formTools .plusAndSliders img {
+    display: none;
   }
   .main .content footer .footerMenu {
     text-align: left;
+  }
+  .main .content footer .footerMenu a {
+    color: #99a1b3;
   }
   .main .content footer .copyRight {
     display: block;
     width: 100%;
     padding: 17px 60px;
     height: 50px;
-    background-color: #f2f2f2;
+    background-color: #f2f4f8;
     text-align: left;
     font-size: 14px;
+    color: #99a1b3;
     background-image: url(src/images/logoWhite_QulixSystems_gray.png);
     background-repeat: no-repeat;
     background-size: 25px;
@@ -475,8 +529,20 @@ footer .copyRight {
 }
 
 @media (min-width: 992px) {
-  body {
-    margin-left: calc((100% - 992px)/2);
-    margin-right: calc((100% - 992px)/2);
+  header {
+    background-position: calc((100% - 950px) / 2);
+  }
+  header .desktopStuff {
+    margin-right: calc((100% - 1000px) / 2);
+    background-image: none;
+  }
+  header .desktopStuff .searchIcon {
+    max-width: 20px;
+  }
+  .main .leftMenu {
+    margin-left: calc((100% - 992px) / 2);
+  }
+  .main .content {
+    margin-right: calc((100% - 992px) / 2);
   }
 }
