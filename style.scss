@@ -11,6 +11,11 @@ $blue: rgb(123, 168, 216);
   color: $gray;
 }
 
+html, body {
+  height: 100%;
+}
+
+
 body {
   margin: 0;
   padding: 0;
@@ -45,9 +50,7 @@ header {
         margin: 6px 0;
       }
     }
-
     .dropDownList {
-      // display: block;
       display: none;
       width: 120px;
       height: 220px;
@@ -55,6 +58,7 @@ header {
       position: absolute;
       left: 0;
       top: 80px;
+      z-index: 1;
       a {
         display: inline-block;
         width: 110px;
@@ -63,9 +67,6 @@ header {
         color: $lightgray;
         padding: 10px;
         cursor: pointer;
-      }
-      a:hover {
-        background-color: $gray;
       }
     }
   }
@@ -152,6 +153,7 @@ header {
       input {
         margin: 20px 5px;
         padding: 0 10px;
+        outline: none;
       }
     }
     .plusAndSliders {
@@ -255,7 +257,13 @@ header {
       img {
         max-width: 6px;
       }
+      
     }
+  }
+  .previuosNextButton {
+    a:hover {
+        background-color: $lightgray;
+      }
   }
 }
 
@@ -274,6 +282,14 @@ footer {
       text-decoration: none;
       margin: 5px;
       font-size: 14px;
+      padding: 12px 10px;
+    }
+    
+  }
+
+  .footerMenu {
+    a:hover {
+      border-top: 6px solid $gray;
     }
   }
   .copyRight {
@@ -358,18 +374,16 @@ footer {
     .menuItems {
       width: 600px;
       text-align: left;
-
-      .desktopItems {
-        display: inline-block;
+      padding: 10px;
+      a {
         color: white;
         text-decoration: none;
         font-size: 14px;
-        padding: 6px 8px 10px 12px;
-        margin-right: 20px;
-        border-top: 6px solid $gray;
+        padding: 5px 5px;
       }
     }
   }
+
   .desktopMenu {
     a:hover {
       border-top: 6px solid white;
@@ -396,7 +410,14 @@ footer {
         color: #99a1b3;
         span {
           font-size: 14px;
-          color: #99a1b3;
+          color: hsl(222, 15%, 65%);
+        }
+      }
+      a:hover {
+        color: black;
+        span {
+          font-size: 14px;
+          color: $gray;
         }
       }
       h4 {
@@ -455,7 +476,7 @@ footer {
             margin: 17px 25px;
             opacity: 0.4;
           }
-          input[type="text"] {
+          input {
             border-radius: 5px;
             border: 1px solid rgb(222, 222, 222);
             margin: 5px 0 0 30px;

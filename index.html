@@ -7,7 +7,8 @@
 	<!-- <link rel="icon" href="icon.ico"> -->
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<script src="script.js" type="text/javascript"></script>
+	<!-- <script src="script.js" type="text/javascript"></script> -->
+
 </head>
 
 <body>
@@ -34,7 +35,7 @@
 			<img class="searchIcon" src="src/images/magnifier-glass_gray.png">
 		</div>
 
-		<div class="mobileMenu">
+		<div class="mobileMenu" onclick="showMenu()">
 			<div class="dropDownIcon">
 				<div class="mobileMenuBar">
 				</div>
@@ -44,7 +45,7 @@
 				</div>
 			</div>
 
-			<div class="dropDownList">
+			<div id="ddmenu" class="dropDownList" style="display: none">
 				<a href="index.html">Menu Item</a>
 				<a href="index.html">Menu Item</a>
 				<a href="index.html">Menu Item</a>
@@ -273,6 +274,7 @@
 					<img src="src/images/right.png">
 				</a>
 			</div>
+
 			<footer>
 				<div class="footerMenu">
 					<a href="#">About</a>
@@ -292,8 +294,15 @@
 
 	</div>
 
-
-
+	<script>
+		function showMenu() {
+			if (document.getElementById('ddmenu').style.display == 'none') {
+				document.getElementById('ddmenu').style.display = 'block';
+			} else {
+				document.getElementById('ddmenu').style.display = 'none';
+			}
+		}
+	</script>
 
 </body>
 
