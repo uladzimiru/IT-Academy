@@ -162,6 +162,10 @@ header .headerStuff .searchIcon {
   margin-right: 10px;
 }
 
+.content .formTools .plusAndSliders .desktopItems {
+  display: none;
+}
+
 .content .formTools .plusAndSliders img {
   display: inline-block;
   max-width: 25px;
@@ -373,7 +377,7 @@ footer .copyRight {
     width: 600px;
     text-align: left;
   }
-  .desktopMenu .menuItems a {
+  .desktopMenu .menuItems .desktopItems {
     display: inline-block;
     color: white;
     text-decoration: none;
@@ -473,14 +477,14 @@ footer .copyRight {
   .main .content .formTools form input[type="text"] {
     border-radius: 5px;
     border: 1px solid #dedede;
-    margin: 5px 40px;
+    margin: 5px 0 0 30px;
     padding: 0 10px;
-    width: 300px;
+    width: 250px;
     height: 50px;
     font-size: 14px;
     outline: none;
     background-image: url(src/images/magnifier-glass_gray.png);
-    background-position: 250px 12px;
+    background-position: 200px 12px;
     background-size: 24px;
     background-repeat: no-repeat;
     opacity: 0.6;
@@ -489,16 +493,19 @@ footer .copyRight {
     float: right;
     margin-right: 30px;
   }
-  .main .content .formTools .plusAndSliders a {
+  .main .content .formTools .plusAndSliders .desktopItems {
+    display: inline-block;
+  }
+  .main .content .formTools .plusAndSliders .desktopItems a {
     display: inline-block;
     vertical-align: text-top;
-    margin: 22px 30px;
+    margin: 22px 30px 0 0;
     text-decoration: none;
     color: #646d81;
     opacity: 0.7;
     font: 14px Georgia;
   }
-  .main .content .formTools .plusAndSliders a img {
+  .main .content .formTools .plusAndSliders .desktopItems a img {
     display: inline-block;
     margin: 0 0;
     max-width: 20px;
