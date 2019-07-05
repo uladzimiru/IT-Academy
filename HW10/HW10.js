@@ -1,5 +1,5 @@
 function Animal(name) {
-    this._name = name;
+    this.name = name;
     this._foodAmount = 50;
 }
 
