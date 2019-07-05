@@ -19,8 +19,7 @@ Animal.prototype.dailyNorm = function (amount) {
 };
 
 Animal.prototype.feed = function () {
-    var self = this;
-    console.log('Насыпаем в миску ' + self.dailyNorm() + ' корма.');
+    console.log('Насыпаем в миску ' + this.dailyNorm() + ' корма.');
 };
 
 
@@ -34,12 +33,14 @@ Cat.prototype = Object.create(Animal.prototype);
 Cat.prototype.constuctor = Cat;
 
 Cat.prototype.feed = function () {
-    console.log(Animal.prototype.feed.apply(this));
+    Animal.prototype.feed.apply(this);
     console.log('Кот доволен ^_^');
+    return this;
 }
 
 Cat.prototype.stroke = function () {
     console.log('Гладим кота');
+    return this;
 }
 
 
@@ -47,8 +48,8 @@ Cat.prototype.stroke = function () {
 var barsik = new Cat('Барсик');
 
 
-barsik.feed();
-barsik.stroke();
+console.log(barsik.feed().stroke().stroke().feed());
+
 
 barsik = null;
 
