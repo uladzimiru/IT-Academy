@@ -83,11 +83,11 @@ function sentenceInfo(text) {
 
     // return sentences;
 
-    for (i = 0; i < sentences.length; i++) {
+    for (i = 0; i < sentences.length - 1; i++) {
         console.log(sentences[i]);
         var temp = [];
         temp[i] = sentences[i].replace(/[^a-z]/gi, '');
-        console.log(temp[i].length);
+        console.log('всего букв: ' + temp[i].length);
 
     }
 
