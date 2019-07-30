@@ -1,0 +1,19 @@
+body {
+box-sizing: border-box;
+background-color: lightyellow;
+}
+
+table {
+width: 100%;
+background-color: lightcyan;
+
+}
+table, tr, td {
+    border: 1px solid gray;
+    border-collapse: collapse;
+    text-align: center;
+}
+td {
+    min-width: 150px;
+    height: 30px;
+}
